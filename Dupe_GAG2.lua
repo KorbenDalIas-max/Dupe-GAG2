@@ -8,7 +8,7 @@ local Backpack = LocalPlayer:WaitForChild("Backpack")
 
 -- Create GUI
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "VisualDuplicator"
+ScreenGui.Name = "KorbenDuplicator"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = PlayerGui
 
@@ -29,7 +29,7 @@ TitleLabel.Name = "TitleLabel"
 TitleLabel.Size = UDim2.new(1, 0, 0, 40)
 TitleLabel.Position = UDim2.new(0, 0, 0, 0)
 TitleLabel.BackgroundTransparency = 1
-TitleLabel.Text = "🔥 VISUAL TOOL DUPLICATOR 🔥"
+TitleLabel.Text = "Korben Dupe"
 TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TitleLabel.TextScaled = true
 TitleLabel.Font = Enum.Font.GothamBold
@@ -77,7 +77,7 @@ DupeButton.Size = UDim2.new(0.92, 0, 0, 40)
 DupeButton.Position = UDim2.new(0.04, 0, 0, 140)
 DupeButton.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
 DupeButton.BorderSizePixel = 0
-DupeButton.Text = "🚀 DUPE TO BACKPACK!"
+DupeButton.Text = "Dupe to backpack"
 DupeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 DupeButton.TextScaled = true
 DupeButton.Font = Enum.Font.GothamBold
@@ -183,7 +183,7 @@ local function performDupe()
             task.wait(0.01)  -- Prevent lag/crash
         end
         StarterGui:SetCore("ChatMakeSystemMessage", {
-            Text = "✅ Visual Duped " .. amount .. "x " .. originalTool.Name .. "!";
+            Text = "✅ Duped " .. amount .. "x " .. originalTool.Name .. "!";
             Color3 = Color3.fromRGB(0, 255, 0);
             Font = Enum.Font.GothamBold;
             FontSize = Enum.FontSize.Size18;
@@ -209,7 +209,7 @@ end)
 -- Tips in chat
 task.wait(1)
 StarterGui:SetCore("ChatMakeSystemMessage", {
-    Text = "🎒 Visual Dupe GUI Loaded! Drag to move, enter name & DUPE!";
+    Text = "🎒 Dupe GUI Loaded! Drag to move, enter name & DUPE!";
     Color3 = Color3.fromRGB(0, 162, 255);
     Font = Enum.Font.GothamBold;
     FontSize = Enum.FontSize.Size18;
